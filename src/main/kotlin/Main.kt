@@ -1,3 +1,7 @@
+import com.sun.org.apache.xpath.internal.operations.Bool
+import jdk.nashorn.internal.runtime.regexp.joni.EncodingHelper
+import jdk.nashorn.internal.runtime.regexp.joni.EncodingHelper.isDigit
+import java.lang.Exception
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
@@ -83,6 +87,25 @@ fun main() {
 //    var date=LocalDate.now().format(DateTimeFormatter.ofPattern("M/d/y"))
 //    var newDate= LocalDate.parse(date, DateTimeFormatter.ofPattern("M/d/y"))
 //    println("You are ${bdayDate.until(newDate).years} years old.")
+
+
+//    fun isDigit(str: String): Boolean {
+//
+//        var sstr = str.trim()
+//        try {
+//            var num = Integer.parseInt(sstr)
+//
+////            println(num::class.simpleName)
+////            return true;
+//        } catch (e: Exception) {
+//
+//            println(e.localizedMessage)
+//            return false;
+//        }
+//
+//
+//    }
+//    println(isDigit("1.23"))
 
 
 }
